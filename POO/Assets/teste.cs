@@ -5,7 +5,7 @@ public class Teste : MonoBehaviour
     Carro fusca = new Carro();
     Carro gol = new Carro();
     
-    //Caminhao
+    Caminhao caminhao = new Caminhao();
 
     void Start()
     {
@@ -33,12 +33,25 @@ public class Teste : MonoBehaviour
             Debug.Log("O Carro " + fusca.NomeDoCarro() + " é mais caro do que o carro " + gol.NomeDoCarro());
 
         }
+
+        caminhao.AtribuirTipoDeCarroceria("Larga");
+        caminhao.AtribuirNumeroDeRodas(8);
+        caminhao.AtribuirPreco(6000.00f);
+        caminhao.AtribuirCor("Azul");
+        caminhao.AtribuirNome("caminhão do falstão");
+        
+        if (fusca.ComparPreco(caminhao))
+        {
+            Debug.Log("O Carro " + fusca.NomeDoCarro() + " é mais caro do que o " + caminhao.NomeDoCarro());
+        }
+        else
+        {
+            Debug.Log("O Carro " + fusca.NomeDoCarro() + " é mais caro do que o " + caminhao.NomeDoCarro());
+
+        }
+
     }
 
-    //caminhao.AtribuirTipoDeCarroceria("Larga")
-    //caminhao.AtribuirNumero_de_rodas(8);
-    //caminhao.AtribuirPreco(6000.00f);
-    //caminhao.AtribuirCor("Azul")
-    //caminhao.AtribuirNome("caminhão do falstão");
+
         
 }
