@@ -39,6 +39,8 @@ public class Teste : MonoBehaviour
         caminhao.AtribuirPreco(6000.00f);
         caminhao.AtribuirCor("Azul");
         caminhao.AtribuirNome("caminhão do falstão");
+            
+            //fusca.AtribuirTipoDeCarroceria("Larga");
         
         if (fusca.ComparPreco(caminhao))
         {
