@@ -1,35 +1,53 @@
+using Unity.VisualScripting;
+using UnityEditor;
 using UnityEngine;
 
-public class inimigo:  ladybug 
+public class inimigo: personagem
 {
     private string armadura;
     private string arma;
 
-    public inimigo(string nome, int energia, int forca_ataque, int forca_do_pulo, int velocidade, int numero_de_pes, int numero_de_maos, string armadura, string arma) : base(nome, energia, forca_ataque, forca_do_pulo, velocidade, numero_de_pes, numero_de_maos)
+    public enum ArmaDoInimgio
+    {
+        ESPADA, MACHADO, ADAGA
+    }
+
+    public enum ArmaduraDoInimigo
+    {
+        MADEIRA, COURO, BRONZE, AÇO
+    }
+
+    [SerializeField]
+    private ArmaduraDoInimigo armadura;
+    [SerializeField]
+    private ArmaDoInimigo arma;
+    private int dano;
+
+    public void atribuirArmadura(ArmaduraDoInimigo armadura)
+
     {
         this.armadura = armadura;
-        this.arma = arma;
     }
 
-    public void AtribuirArmadura(string armadura)
-    {
-        
-        this.armadura = armadura;
-    }
-
-    public string Armadura()
-    {
-        return this.armadura;
-    }
-
-    public void AtribuirArma(string arma)
-
+    public void AtribuirArma(ArmaDoInimigo arma)
     {
         this.arma = arma;
     }
-
+    
+    public void DanoDoInimigo()
 
     public int DanoDoInimigo()
+    {
+        int dano = 0;
+
+        switch (arma)
+        {
+            case ArmaDoInimigo.ESPADA:
+                dano = forca_ataque() + 10;
+        }
+    }
+    
+    
     {
         int dano = 0;
         switch (arma)
@@ -65,4 +83,8 @@ public class inimigo:  ladybug
     
     
     
+}
+
+internal class ArmaDoInimigo
+{
 }

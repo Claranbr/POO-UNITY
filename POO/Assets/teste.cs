@@ -1,6 +1,6 @@
 using Unity.VisualScripting.FullSerializer;
 using UnityEngine;
-public class Teste : MonoBehaviour
+public class Teste<joao> : MonoBehaviour
 {
     Carro fusca = new Carro();
     Carro gol = new Carro();
