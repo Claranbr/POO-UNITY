@@ -1,12 +1,14 @@
 using Unity.VisualScripting.FullSerializer;
 using UnityEngine;
-public class Teste<joao> : MonoBehaviour
+public class Teste : MonoBehaviour
 {
     Carro fusca = new Carro();
     Carro gol = new Carro();
     
     Caminhao caminhao = new Caminhao();
 
+    Personagem joao = new Personagem();
+    Inimigo ork = new Inimigo();
     void Start()
     {
 
@@ -52,29 +54,26 @@ public class Teste<joao> : MonoBehaviour
 
         }
 
+        
+        joao.AtribuirNome("João Roberto II");
+        joao.AtribuirEnergia(10);
+        joao.AtribuirForca_Ataque(12);
+        joao.AtribuirForca_Do_pulo(6);
+        joao.AtribuirVelocidade (8);
+        joao.AtribuirNumero_de_pes(2);
+        joao.AtribuirNumero_de_maos(2);
+
+        ork.AtribuirNome("Ork Gob");
+        ork.AtribuirEnergia (23);
+        ork.AtribuirForca_Ataque (15);
+        ork.AtribuirForca_Do_pulo (8);
+        ork.AtribuirVelocidade (6);
+        ork.AtribuirNumero_de_pes(2);
+        ork.AtribuirNumero_de_maos(4);
+        
+        
     }
     
-      //====================================================================================
 
-      
-       
-    joao.AtribuirNome("João Roberto II");
-    joao.AtribuirEnergia(10);
-    joao.AtribuirForca_Ataque(12);
-    joao.AtribuirForca_do_pulo(6);
-    joao.Atribuir Velocidade (8);
-    joao.AtribuitNumero_de_pes(2);
-    joao.AtribuitNumero_de_maos(2);
-
-    ork.AtribuirNome("Ork Gob");
-    ork.AtribuirEnergia (23);
-    ork.AtribuirForca_Ataque (15);
-    ork.AtribuirForca_do_pulo (8);
-    ork.Atribuir Velocidade (6);
-    ork.AtribuitNumero_de_pes(2);
-    ork.AtribuitNumero_de_maos(4);
         
-}
-
-
 }
