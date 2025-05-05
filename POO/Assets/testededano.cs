@@ -8,6 +8,7 @@ public class testededano : MonoBehaviour
     {
         if (colisao.gameObject.tag == "Inimigo")
         {
+            
             Debug.Log(colisao.gameObject.name);
 
             int energia = personagem.Energia();
