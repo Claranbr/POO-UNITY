@@ -221,7 +221,7 @@ Transform:
   m_GameObject: {fileID: 259500591}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.0527, y: -3.74, z: -7.3159}
+  m_LocalPosition: {x: -0.01, y: -3.71, z: -7.3159}
   m_LocalScale: {x: 17.9055, y: 1, z: 31.8376}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -377,7 +377,6 @@ GameObject:
   - component: {fileID: 1591496258}
   - component: {fileID: 1591496257}
   - component: {fileID: 1591496256}
-  - component: {fileID: 1591496255}
   m_Layer: 0
   m_Name: Cube (1)
   m_TagString: Animal
@@ -385,33 +384,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!54 &1591496255
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1591496254}
-  serializedVersion: 4
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_CenterOfMass: {x: 0, y: 0, z: 0}
-  m_InertiaTensor: {x: 1, y: 1, z: 1}
-  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ImplicitCom: 1
-  m_ImplicitTensor: 1
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 4
-  m_CollisionDetection: 0
 --- !u!114 &1591496256
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -518,7 +490,7 @@ Transform:
   m_GameObject: {fileID: 1591496254}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.5500002, y: 2.49, z: -9.92}
+  m_LocalPosition: {x: 2.83, y: 2.49, z: -10.34}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -632,7 +604,7 @@ Transform:
   m_GameObject: {fileID: 1911840505}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.4099998, y: 2.44, z: -10}
+  m_LocalPosition: {x: -6.15, y: -1.15, z: -9.96}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -663,7 +635,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 4
+  m_Constraints: 84
   m_CollisionDetection: 0
 --- !u!114 &1911840511
 MonoBehaviour:
@@ -708,7 +680,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 417958ceb7d659e4d97b803a5992fbb2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velocidade: 10
 --- !u!1 &2139409410
 GameObject:
   m_ObjectHideFlags: 0
@@ -723,6 +694,7 @@ GameObject:
   - component: {fileID: 2139409411}
   - component: {fileID: 2139409416}
   - component: {fileID: 2139409415}
+  - component: {fileID: 2139409417}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Inimigo
@@ -813,7 +785,7 @@ Transform:
   m_GameObject: {fileID: 2139409410}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.4499998, y: 2.65, z: -9.928804}
+  m_LocalPosition: {x: 7.55, y: -1.18, z: -9.928804}
   m_LocalScale: {x: 1, y: 1.6343552, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -844,7 +816,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 4
+  m_Constraints: 84
   m_CollisionDetection: 0
 --- !u!114 &2139409416
 MonoBehaviour:
@@ -867,6 +839,19 @@ MonoBehaviour:
   numero_de_maos: 2
   armadura: 1
   arma: 2
+--- !u!114 &2139409417
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2139409410}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7433f970cddb24340bc0331c4e4de7a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  raioDevisao: 3
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
