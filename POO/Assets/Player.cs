@@ -2,13 +2,14 @@ using UnityEngine;
 
 public class Play : MonoBehaviour
 {
-    private Rigidbory rigididbory;
 
-    public float velocidade = 10;
+
+    private float velocidade;
         
     void Start()
     {
-        rigididbory = GetComponent<Rigidbory>();
+        velocidade = gameObject.GetComponent<Personagem>().velocidade;
+     
         
     }
     
@@ -19,25 +20,25 @@ public class Play : MonoBehaviour
         
         
         //Esquerda x-
-        if (Input.GetKeyDown(KeyCode.A))
+        if (Input.GetKey(KeyCode.A))
         {
             posicao.x = transform.position.x - velocidade * Time.deltaTime;
         }
         
         //Direita x-
-        if (Input.GetKeyDown(KeyCode.D))
+        if (Input.GetKey(KeyCode.D))
         {
             posicao.x = transform.position.x + velocidade * Time.deltaTime;
         }
         
         //Cima z+
-        if (Input.GetKeyDown(KeyCode.W))
+        if (Input.GetKey(KeyCode.W))
         {
             posicao.z = transform.position.z + velocidade * Time.deltaTime;
         }
         
         //Baixo Z-
-        if (Input.GetKeyDown(KeyCode.S))
+        if (Input.GetKey(KeyCode.S))
         {
             posicao.z = transform.position.z - velocidade * Time.deltaTime;
         }
@@ -47,12 +48,4 @@ public class Play : MonoBehaviour
         
     }
     
-}
-
-internal class Rigidbory
-{
-}
-
-internal class Rigibori
-{
 }
